@@ -1069,6 +1069,10 @@ video {
     background-image: url('../images/hero/hero-img-3.jpg');
   }
 
+  .lg\:bg-\[url\(\'\.\.\/images\/hero\/hero-img-4\.jpg\'\)\] {
+    background-image: url('../images/hero/hero-img-4.jpg');
+  }
+
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;

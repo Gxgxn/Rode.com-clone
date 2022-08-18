@@ -18,26 +18,43 @@
   <body>
     <!-- nav-header -->
     <header class="text-gray-600 body-font">
-      <div class="container w-[90%] mx-auto px-2 flex justify-between">
+      <div
+        class="container md:w-[90%] mx-auto px-2 py-2 md:py-0 flex justify-between items-center sticky top-0 z-50"
+      >
+        <div class="flex items-center">
+          <a href="" class="block md:hidden">
+            <i class="fa-solid fa-bars"></i
+          ></a>
+          <a
+            class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:text-gray-900 rounded text-base"
+            href=""
+          >
+            <i class="fa-solid fa-location-dot"></i> &nbsp;EN &nbsp;<i
+              class="fa-solid fa-caret-down"
+            ></i>
+          </a>
+        </div>
         <a
-          class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:text-gray-900 rounded text-base mt-4 md:mt-0"
-          href=""
+          class="title-font font-medium items-center text-gray-900 block md:hidden"
         >
-          <i class="fa-solid fa-location-dot"></i> &nbsp;EN &nbsp;<i
-            class="fa-solid fa-caret-down"
-          ></i>
+          <img class="w-20" src="./images/rode-logo.svg" alt="" />
         </a>
-
         <a
-          class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:text-gray-900 rounded text-xl mt-4 md:mt-0"
+          class="items-center border-0 py-1 px-3 focus:outline-none hover:text-gray-900 rounded text-xl hidden md:inline-flex"
           href=""
         >
           <i class="fa-regular fa-user"></i>
         </a>
+        <a
+          class="items-center border-0 py-1 px-3 focus:outline-none hover:text-gray-900 rounded text-xl inline-flex md:hidden"
+          href=""
+        >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
       </div>
-      <hr class="m-1 rode-line-top" />
+      <hr class="m-1 rode-line-top hidden md:block" />
       <div
-        class="container w-[90%] mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+        class="container w-[90%] mx-auto hidden md:flex flex-wrap p-5 flex-col md:flex-row items-center"
       >
         <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -584,7 +601,7 @@
 
     <footer class="text-gray-600 body-font mt-20 border-t-2 border-gray-200">
       <div
-        class="container px-5 py-16 mx-auto flex gap-8 md:gap-0 items-center lg:items-start lg:justify-between md:flex-row md:flex-nowrap flex-wrap flex-col border-b-2 border-gray-200"
+        class="container md:w-[90%] px-5 py-16 mx-auto flex gap-8 md:gap-0 items-center lg:items-start lg:justify-between md:flex-row md:flex-nowrap flex-wrap flex-col border-b-2 border-gray-200"
       >
         <div class="w-64 md:mx-0 mx-auto text-center md:text-left">
           <a
@@ -596,24 +613,33 @@
         <div
           class="flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center"
         >
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div
+            class="lg:w-1/4 md:w-1/2 w-full px-4"
+            id="accordion-collapse"
+            data-accordion="collapse"
+          >
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              Products
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 cursor-pointer">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800"> Microphones</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Interfaces and Mixers</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Accessories</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Software</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-800">SApparel</a>
               </li>
             </nav>
           </div>
@@ -621,20 +647,20 @@
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              Support
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 cursor-pointer">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800"> Contact RØDE</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Service Centre</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                <a class="text-gray-600 hover:text-gray-800">Warranty</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                <a class="text-gray-600 hover:text-gray-800"> Where to Buy</a>
               </li>
             </nav>
           </div>
@@ -642,20 +668,19 @@
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              Company
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 cursor-pointer">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800">About RØDE</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                <a class="text-gray-600 hover:text-gray-800">News and Info</a>
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Job Opportunities</a
+                >
               </li>
             </nav>
           </div>
@@ -663,20 +688,16 @@
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
             >
-              CATEGORIES
+              Account
             </h2>
-            <nav class="list-none mb-10">
+            <nav class="list-none mb-10 cursor-pointer">
               <li>
-                <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                <a class="text-gray-600 hover:text-gray-800"
+                  >Manage your Account</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                <a class="text-gray-600 hover:text-gray-800"> Create Account</a>
               </li>
             </nav>
           </div>
@@ -696,15 +717,11 @@
               >Sign up
             </a>
           </div>
-          <p class="text-gray-500 text-sm mt-2 md:text-right text-center">
-            Bitters chicharrones fanny pack
-            <br class="lg:block hidden" />waistcoat green juice
-          </p>
         </div>
       </div>
       <div>
         <div
-          class="container mx-auto py-4 px-5 flex flex-wrap flex-col justify-between items-center gap-4 md:gap-0 sm:flex-row text-xl text-rodeBrown"
+          class="container md:w-[90%] mx-auto py-4 px-5 flex flex-wrap flex-col justify-between items-center gap-4 md:gap-0 sm:flex-row text-xl text-rodeBrown"
         >
           <p class="text-gray-500 text-sm text-center sm:text-left">
             © 2022 RØDE All Rights Reserved
